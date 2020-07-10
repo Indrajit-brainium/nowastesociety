@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/navprofilePic"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/navuserfirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lora_regular"
+        android:text="John"
+        android:layout_weight="1"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/navuserlastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lora_regular"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:text="Doe"
+            android:layout_weight="1"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/navuserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lora_regular"
+        android:text="john@gmail.com"
+        android:textAlignment="center"
+        android:textColor="#7e90bc"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

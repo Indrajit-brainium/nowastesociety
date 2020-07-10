@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:fontFamily="@font/lora_regular"
+            android:title="Edit Profile" />
+
+        <item
+            android:id="@+id/nav_fav"
+            android:fontFamily="@font/lora_regular"
+            android:title="My Favourite" />
+
+        <item
+            android:id="@+id/nav_orders"
+            android:fontFamily="@font/lora_regular"
+            android:title="My Orders" />
+
+        <item
+            android:id="@+id/nav_payment"
+            android:fontFamily="@font/lora_regular"
+            android:title="Payment Details" />
+
+
+        <item
+            android:id="@+id/nav_address"
+            android:fontFamily="@font/lora_regular"
+            android:title="My Address" />
+
+        <item
+            android:id="@+id/nav_issue"
+            android:fontFamily="@font/lora_regular"
+            android:title="Report an Issue" />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:fontFamily="@font/lora_regular"
+            android:title="Logout" >
+
+
+
+
+
+
+        </item>
+
+
+    </group>
+
+
+</menu>

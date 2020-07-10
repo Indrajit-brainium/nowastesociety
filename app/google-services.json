@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "992255713394",
+    "firebase_url": "https://no-waste-society.firebaseio.com",
+    "project_id": "no-waste-society",
+    "storage_bucket": "no-waste-society.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992255713394:android:46c8b9554fe5e3399aa2eb",
+        "android_client_info": {
+          "package_name": "com.example.nowastesociety"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992255713394-2su2gm4f73ognjat6khq1dthachu1bst.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nowastesociety",
+            "certificate_hash": "c34d1238ea5caabce233586fb0210dc39d593aa3"
+          }
+        },
+        {
+          "client_id": "992255713394-iih6a3sk249v3p1pktupqnf2ru9uhj9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDskYdHJIhOfsMsgDlM4DxxdJ9DjgnYcY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992255713394-iih6a3sk249v3p1pktupqnf2ru9uhj9f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

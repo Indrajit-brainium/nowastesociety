@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/splash">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_55sdp"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:backgroundTint="@color/colorWhite"
+                android:fontFamily="@font/lora_regular"
+                android:hint="Your card number"
+                android:inputType="numberPassword"
+                android:maxLength="16"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etconfirmCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:backgroundTint="@color/colorWhite"
+                android:fontFamily="@font/lora_regular"
+                android:hint="Confirm card number"
+                android:inputType="numberPassword"
+                android:maxLength="16"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etuserName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:backgroundTint="@color/colorWhite"
+                android:fontFamily="@font/lora_regular"
+                android:hint="Name on card"
+                android:inputType="text"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lora_regular"
+                    android:text="Expiry Date : "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:fontFamily="@font/lora_regular"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lora_regular"
+                    android:text="/"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:fontFamily="@font/lora_regular"
+                    android:hint="YY"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lora_regular"
+                    android:text="Enter your CVV : "
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etCVV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:backgroundTint="@color/colorWhite"
+                    android:fontFamily="@font/lora_regular"
+                    android:hint="CVV"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorWhite" />
+
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etpinCode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:backgroundTint="@color/colorWhite"
+                android:fontFamily="@font/lora_regular"
+                android:hint="Pincode"
+                android:inputType="number"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddcard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginLeft="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginRight="@dimen/_80sdp"
+                android:background="@drawable/loginbutton"
+                android:fontFamily="@font/lora_regular"
+                android:text="Add Card"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlackTextView"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:src="@drawable/ic_back"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:fontFamily="@font/lora_regular"
+            android:gravity="center"
+            android:text="Add New Card"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/btn_logout2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

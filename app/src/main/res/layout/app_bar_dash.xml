@@ -1,0 +1,107 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:popupTheme="@style/AppTheme">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_menu"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    app:layout_anchor="@+id/appBarLayout"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    app:layout_anchorGravity="start|center"
+                    app:srcCompat="@drawable/ic_menu" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:src="@drawable/ic_location" />
+
+
+                    <TextView
+                        android:id="@+id/navBartitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_23sdp"
+                        android:fontFamily="@font/lora_regular"
+                        android:text="Brainium"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_16sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_113sdp"
+                        android:padding="@dimen/_4sdp"
+                        android:background="@color/colorTextgreen"
+                        android:fontFamily="@font/lora_regular"
+                        android:text="CHANGE"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                    <ImageView
+                        android:id="@+id/imgNotification"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_16sdp"
+                        android:src="@drawable/ic_notifications" />
+
+                    <ImageView
+                        android:id="@+id/imgSearch"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_toLeftOf="@+id/imgNotification"
+                        android:src="@drawable/ic_search" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <include
+        layout="@layout/dash_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
